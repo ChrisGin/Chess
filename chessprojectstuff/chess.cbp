@@ -31,6 +31,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Bishop.h" />
+		<Unit filename="Rock.h" />
 		<Unit filename="piece.h" />
 		<Extensions>
 			<code_completion />
