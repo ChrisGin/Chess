@@ -1,17 +1,15 @@
-#ifndef ROCK_H_INCLUDED
-#define ROCK_H_INCLUDED
+#ifndef ROOK_H_INCLUDED
+#define ROOK_H_INCLUDED
 
 // ********************************************************
-// Class Name: This creates the
+// Class Name:
 //
 /* Description: This class provides
 
 
 */
 // *******************************************************
-#include "piece.h"
-
-class Rock : public piece{
+class Rock : public Piece{
 
 public:
 
@@ -20,6 +18,4 @@ private:
     bool validMove(int moveX, int moveY);
 
 }
-
-
-#endif // ROCK_H_INCLUDED
+#endif // ROOK_H_INCLUDED

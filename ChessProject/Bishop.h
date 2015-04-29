@@ -9,10 +9,7 @@
 
 */
 // *******************************************************
-
-#endif // BISHOP_H_INCLUDED
-
-class Rock : public piece{
+class Rook : public Piece{
 
 public:
 
@@ -21,3 +18,5 @@ private:
     bool isValidMove(int moveX, int moveY);
 
 }
+
+#endif // BISHOP_H_INCLUDED
