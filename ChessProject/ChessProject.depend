@@ -1,6 +1,23 @@
 # depslib dependency file v1.0
-1430266157 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/Piece.cpp
+1430414202 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/Piece.cpp
 	"Piece.h"
 
 1430266699 /home/yaya/Desktop/Project2AChess/Chess/ChessProject/Piece.h
+
+1430434887 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/Bishop.cpp
+	"Piece.h"
+	"Bishop.h"
+
+1430434895 /home/yaya/Desktop/Project2AChess/Chess/ChessProject/Bishop.h
+	"Piece.h"
+	<string>
+
+1430434930 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/Rook.cpp
+	"Piece.h"
+	"Rook.h"
+
+1430434953 /home/yaya/Desktop/Project2AChess/Chess/ChessProject/Rook.h
+	"Piece.h"
+	"Rook.h"
+	<string>
 

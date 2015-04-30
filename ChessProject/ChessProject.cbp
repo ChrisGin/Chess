@@ -31,6 +31,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Bishop.cpp" />
+		<Unit filename="Bishop.h" />
+		<Unit filename="Piece.cpp" />
+		<Unit filename="Piece.h" />
+		<Unit filename="Rook.cpp" />
+		<Unit filename="Rook.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

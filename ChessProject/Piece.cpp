@@ -1,5 +1,5 @@
 // ********************************************************
-// Name: .cpp
+// Name: Piece.cpp
 //
 // Summary: This file
 //
@@ -31,7 +31,7 @@ Piece::Piece(int x, int y, bool is_alive, char color)
 void Piece::setColor(char color)
 {
 
-    if(color == 'B' && color == 'W')
+    if(color == 'B' || color == 'W')
         this-> color = color;
 
 }
@@ -44,13 +44,13 @@ void Piece::setIsAlive(bool is_alive)
 
 void Piece::setX(int x)
 {
-    if( x >= 0)
+    if( x >= -1)
         this-> x = x;
 }
 
 void Piece::setY(int y)
 {
-    if( y >= 0)
+    if( y >= -1)
         this-> y = y;
 
 }
