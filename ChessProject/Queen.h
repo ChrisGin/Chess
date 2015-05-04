@@ -1,38 +1,34 @@
-#ifndef ROOK_H_INCLUDED
-#define ROOK_H_INCLUDED
+#ifndef QUEEN_H_INCLUDED
+#define QUEEN_H_INCLUDED
 
 // ********************************************************
-// Class Name: Roock
+// Class Name: Queen.h
 //
-/* Description: This class provides
+/* Description: This class creates a Queen piece, it also inherits from the Piece class
 
 
 */
 // *******************************************************
 #include "Piece.h"
-#include "Rook.h"
 #include <string>
 
 using namespace std;
 
-
-class Rook : public Piece{
+class Queen : public Piece{
 
 public:
-    string piece_drawing;
 
 private:
-    Rook();
+    Queen();
 //********************************************************
  /* Summary: Default constructor
     Precondition: none
     Postcondition: none*/
 // *******************************************************
-
-    Rook(int x, int y, bool is_alive,string piece_name, char color);
+    Queen(int x, int y, bool is_alive, char color,string piece_name);
 //********************************************************
  /* Summary: Overloaded constructor
-    Precondition: have the Piece class defined
+    Precondition: the Piece class should be design.
     Postcondition: none*/
 // *******************************************************
 
@@ -43,5 +39,8 @@ private:
     Postcondition: none*/
 // *******************************************************
 
+
+
+
 };
-#endif // ROOK_H_INCLUDED
+#endif // QUEEN_H_INCLUDED

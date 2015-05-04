@@ -1,7 +1,8 @@
 // ********************************************************
-// Name: .cpp
+// Name: Queen.cpp
 //
-// Summary: This file
+// Summary: This file implements the Queen definition using the Piece class
+//          and constructor
 //
 // Author: Yarely Chino
 // Created: / /2015
@@ -9,23 +10,24 @@
 //
 // *******************************************************
 #include "Piece.h"
-#include "Rook.h"
+#include "Queen.h"
 #include <cassert>
 
 using namespace std;
-Rook::Rook()
+Queen::Queen()
 {
 
 }
 
-Rook::Rook(int x, int y, bool is_alive, string piece_name, char color) : Piece(x, y, is_alive, color, piece_name)
+Queen::Queen(int x, int y, bool is_alive, char color, string piece_name ) : Piece(x, y, is_alive, color, piece_name)
 {
+
 
 }
 
-
-bool Rook::canMove(int moveX, int moveY)
+bool Queen::canMove(int moveX, int moveY)
 {
+    // i still need to do the bishop moves and put them in here
     if(moveX == x)
     {
         assert(0 <= moveY && moveY < 8);

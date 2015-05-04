@@ -11,6 +11,9 @@
 // *******************************************************
 
 //this class is part of when the player objects are created.
+#include <string>
+
+using namespace std;
 class Piece //Abstract Class
 {
 protected:
@@ -18,6 +21,8 @@ protected:
     int y;
     bool is_alive;
     char color;
+    string piece_name;
+
 
 public:
 
@@ -28,12 +33,20 @@ public:
     Postcondition: none*/
 // *******************************************************
 
-    Piece(int x, int y, bool is_alive, char color);
+    Piece(int x, int y, bool is_alive, char color, string piece_name);
 //********************************************************
  /* Summary: Overloaded constructor
     Precondition: none
     Postcondition: none*/
 // *********************************************************
+
+    void setPieceName(string piece_name);
+//********************************************************
+ /* Summary: Sets the piece_name variable
+    Precondition: can only be six of the chess pieces
+    Postcondition: none*/
+// *********************************************************
+
     //Mutators
     void setColor(char color);
 //********************************************************
@@ -87,6 +100,13 @@ public:
     //Precondition:this piece has been instantiated
     //Postcondition: Shows what is the state of this piece.
     //Summary: Checks if this specific piece is in a players graveyard or on the board
+    string getPieceName() const {return piece_name;}
+//********************************************************
+ /* Summary: returns the pieceName member variable
+    Precondition: none
+    Postcondition: none*/
+// *********************************************************
+
     virtual bool canMove(int moveX, int moveY) = 0;
     //Precondition: this piece has been instantiated.
     //Postcondition: shows if this piece can move or not

@@ -17,13 +17,31 @@ using namespace std;
 class Bishop : public Piece{
 
 public:
-    char piece_icon;
+
     string piece_drawing;
 
 private:
     Bishop();
-    Bishop(int x, int y, bool is_alive, char color, char piece_icon);
+//********************************************************
+ /* Summary: Default constructor
+    Precondition: none
+    Postcondition: none*/
+// *******************************************************
+    Bishop(int x, int y, bool is_alive, char color,string piece_name);
+//********************************************************
+ /* Summary: Overloaded constructor
+    Precondition: the Piece class should be design.
+    Postcondition: none*/
+
     bool canMove(int moveX, int moveY);
+//********************************************************
+ /* Summary: This is the virtul method is the Piece class
+    Precondition: checks if their moves are valid
+    Postcondition: none*/
+// *******************************************************
+
+
+
 
 };
 

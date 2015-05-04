@@ -16,15 +16,15 @@ using namespace std;
 Bishop::Bishop()
 {
 
-
 }
 
-Bishop::Bishop(int x, int y, bool is_alive, char color, char piece_icon) : Piece(x, y, is_alive, color)
+Bishop::Bishop(int x, int y, bool is_alive, char color, string piece_name) : Piece(x, y, is_alive, color, piece_name)
 {
 
 }
 
 bool Bishop::canMove(int moveX, int moveY)
 {
+
 
 }
