@@ -18,9 +18,7 @@ class Bishop : public Piece{
 
 public:
 
-    string piece_drawing;
-
-private:
+public:
     Bishop();
 //********************************************************
  /* Summary: Default constructor

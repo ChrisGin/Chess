@@ -16,9 +16,9 @@ using namespace std;
 
 class Queen : public Piece{
 
-public:
-
 private:
+
+public:
     Queen();
 //********************************************************
  /* Summary: Default constructor

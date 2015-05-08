@@ -18,10 +18,9 @@ using namespace std;
 
 class Rook : public Piece{
 
-public:
-    string piece_drawing;
-
 private:
+
+public:
     Rook();
 //********************************************************
  /* Summary: Default constructor
@@ -29,7 +28,7 @@ private:
     Postcondition: none*/
 // *******************************************************
 
-    Rook(int x, int y, bool is_alive,string piece_name, char color);
+    Rook(int x, int y, bool is_alive,char color, string piece_name);
 //********************************************************
  /* Summary: Overloaded constructor
     Precondition: have the Piece class defined

@@ -47,6 +47,8 @@ void Piece::setPieceName(string piece_name)
     //Mutators
 void Piece::setColor(char color)
 {
+    color = toupper(color);
+    assert((color == 'W'|| color =='B'));
 
     if(color == 'B' || color == 'W')
         this-> color = color;

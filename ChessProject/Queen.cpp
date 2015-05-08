@@ -12,6 +12,7 @@
 #include "Piece.h"
 #include "Queen.h"
 #include <cassert>
+#include <cmath>
 
 using namespace std;
 Queen::Queen()
@@ -28,17 +29,16 @@ Queen::Queen(int x, int y, bool is_alive, char color, string piece_name ) : Piec
 bool Queen::canMove(int moveX, int moveY)
 {
     // i still need to do the bishop moves and put them in here
+    assert(0 <= moveY && moveY < 8);//checks board limits
+    assert(0 <= moveX && moveX < 8);//checks board limits
+
     if(moveX == x)
-    {
-        assert(0 <= moveY && moveY < 8);
-        return true;
-    }
-    else if(moveY == y)
-    {
-        assert(0 <= moveY && moveY < 8);
         return true;
 
-    }
+    else if(moveY == y)
+        return true;
+    if (abs(moveX-x) == abs(moveY-y))
+        return true;
 
     return false;
 }
