@@ -1,46 +1,60 @@
 # depslib dependency file v1.0
-1431120161 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/Piece.cpp
+1431124651 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/Piece.cpp
 	"Piece.h"
 	<cassert>
 
-1431120326 /home/yaya/Desktop/Project2AChess/Chess/ChessProject/Piece.h
+1431125540 /home/yaya/Desktop/Project2AChess/Chess/ChessProject/Piece.h
 	<string>
 
-1431119196 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/Bishop.cpp
+1431124651 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/Bishop.cpp
 	"Piece.h"
 	"Bishop.h"
 	<cmath>
 	<cassert>
 
-1431119535 /home/yaya/Desktop/Project2AChess/Chess/ChessProject/Bishop.h
+1431125031 /home/yaya/Desktop/Project2AChess/Chess/ChessProject/Bishop.h
 	"Piece.h"
 	<string>
 
-1431121101 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/Rook.cpp
+1431124694 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/Rook.cpp
 	"Piece.h"
 	"Rook.h"
 	<cassert>
 	<cmath>
 
-1431119818 /home/yaya/Desktop/Project2AChess/Chess/ChessProject/Rook.h
+1431125031 /home/yaya/Desktop/Project2AChess/Chess/ChessProject/Rook.h
 	"Piece.h"
 	"Rook.h"
 	<string>
 
-1431121122 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/Queen.cpp
+1431124651 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/Queen.cpp
 	"Piece.h"
 	"Queen.h"
 	<cassert>
 	<cmath>
 
-1431119557 /home/yaya/Desktop/Project2AChess/Chess/ChessProject/Queen.h
+1431125031 /home/yaya/Desktop/Project2AChess/Chess/ChessProject/Queen.h
 	"Piece.h"
 	<string>
 
-1431121046 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/main.cpp
+1431363609 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/main.cpp
 	"Piece.h"
 	"Rook.h"
 	"Queen.h"
 	"Bishop.h"
+	"Board.h"
 	<iostream>
+
+1431364418 source:/home/yaya/Desktop/Project2AChess/Chess/ChessProject/Board.cpp
+	"Board.h"
+	<cstdlib>
+	<iostream>
+
+1431364376 /home/yaya/Desktop/Project2AChess/Chess/ChessProject/Board.h
+	"Piece.h"
+	"Rook.h"
+	"Queen.h"
+	"Bishop.h"
+	"Board.h"
+	<string>
 

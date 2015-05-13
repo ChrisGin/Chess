@@ -17,16 +17,14 @@ Piece::Piece()
 {
     x = -1;
     y = -1;
-    is_alive = true;
     color = 'u';
     piece_name = "unknown";
 }
 
-Piece::Piece(int x, int y, bool is_alive, char color, string piece_name)
+Piece::Piece(int x, int y, char color, string piece_name)
 {
     setX(x);
     setY(y);
-    setIsAlive(is_alive);
     setColor(color);
     setPieceName(piece_name);
 }
@@ -55,11 +53,6 @@ void Piece::setColor(char color)
 
 }
 
-void Piece::setIsAlive(bool is_alive)
-{
-    this-> is_alive = is_alive;
-
-}
 
 void Piece::setX(int x)
 {

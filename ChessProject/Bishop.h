@@ -16,7 +16,6 @@ using namespace std;
 
 class Bishop : public Piece{
 
-public:
 
 public:
     Bishop();
@@ -25,7 +24,7 @@ public:
     Precondition: none
     Postcondition: none*/
 // *******************************************************
-    Bishop(int x, int y, bool is_alive, char color,string piece_name);
+    Bishop(int x, int y, char color,string piece_name);
 //********************************************************
  /* Summary: Overloaded constructor
     Precondition: the Piece class should be design.

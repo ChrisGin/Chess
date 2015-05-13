@@ -20,7 +20,7 @@ Queen::Queen()
 
 }
 
-Queen::Queen(int x, int y, bool is_alive, char color, string piece_name ) : Piece(x, y, is_alive, color, piece_name)
+Queen::Queen(int x, int y, char color, string piece_name ) : Piece(x, y, color, piece_name)
 {
 
 

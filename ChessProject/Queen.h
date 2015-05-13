@@ -16,8 +16,6 @@ using namespace std;
 
 class Queen : public Piece{
 
-private:
-
 public:
     Queen();
 //********************************************************
@@ -25,7 +23,7 @@ public:
     Precondition: none
     Postcondition: none*/
 // *******************************************************
-    Queen(int x, int y, bool is_alive, char color,string piece_name);
+    Queen(int x, int y, char color,string piece_name);
 //********************************************************
  /* Summary: Overloaded constructor
     Precondition: the Piece class should be design.

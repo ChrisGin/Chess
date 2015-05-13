@@ -18,8 +18,6 @@ using namespace std;
 
 class Rook : public Piece{
 
-private:
-
 public:
     Rook();
 //********************************************************
@@ -28,7 +26,7 @@ public:
     Postcondition: none*/
 // *******************************************************
 
-    Rook(int x, int y, bool is_alive,char color, string piece_name);
+    Rook(int x, int y,char color, string piece_name);
 //********************************************************
  /* Summary: Overloaded constructor
     Precondition: have the Piece class defined
