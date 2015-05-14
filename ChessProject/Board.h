@@ -8,11 +8,9 @@
 
 #ifndef ChessGame_Board_h
 #define ChessGame_Board_h
-#include "Piece.h"
 #include "Rook.h"
 #include "Queen.h"
 #include "Bishop.h"
-#include "Board.h"
 #include <string>
 using namespace std;
 
@@ -28,12 +26,12 @@ class Board
 
         void setArray(int row, int col, string piece_name);
 
-       // void movement(Knight k, int x, int y);
+        //void movement(Knight k, int x, int y);
         void movement(Queen Q, int x, int y);
-//        void movement(Pawn p, int x, int y);
+        //void movement(Pawn p, int x, int y);
         void movement(Rook r, int x, int y);
         void movement(Bishop b, int x, int y);
-//        void movement(King k, int x, int y);
+        //void movement(King k, int x, int y);
 
 
 };

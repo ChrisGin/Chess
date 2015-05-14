@@ -11,6 +11,9 @@
 // *******************************************************
 
 #include "Piece.h"
+#include "King.h"
+#include "Knight.h"
+#include "Pawn.h"
 #include "Rook.h"
 #include "Queen.h"
 #include "Bishop.h"

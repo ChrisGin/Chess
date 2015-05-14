@@ -17,7 +17,7 @@ Board::Board()
     {
         for(int x = 0; x < X; x++)
         {
-           arrayOfNames[y][x] = "|        |";
+           arrayOfNames[y][x] = "|      |";
            //arrayOfNames[y][x] = "SPACE";
         }
     }
@@ -99,3 +99,21 @@ void Board::movement(Queen Q, int x, int y)
     }
 
 }
+
+/*void Board::movement(Knight &k, int col, int row)
+ {
+    if(k.canMove(row, col))
+    {
+        if(arrayOfNames[row][col] == "|        |")
+        {
+            setArray(row, col, k.getPieceName());
+            setArray(k.getY(), k.getX(), "  SPACE ");
+            k.setY(row);
+            k.setX(col);
+        }
+    }
+    else
+    {
+        cout<<"Wrong input\n";
+    }
+ }*/

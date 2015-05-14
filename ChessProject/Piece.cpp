@@ -31,18 +31,23 @@ Piece::Piece(int x, int y, char color, string piece_name)
 
 void Piece::setPieceName(string piece_name)
 {
-        for(int i = 0; piece_name[i]; i++)
-            piece_name[i] = tolower(piece_name[i]);
-
-    assert(piece_name == "king" || piece_name == "rook"
-            || piece_name == "bishop" || piece_name == "queen"
-            || piece_name == "knight" || piece_name ==  "pawn");
-
-    this->piece_name = piece_name;
-
-
+    if((piece_name == "WKing  " || piece_name == "WQueen  " || piece_name == "WBishop1" ||
+        piece_name == "WBishop2" || piece_name == "WKnight1" || piece_name == "WKnight2" ||
+        piece_name == "WRook1  " || piece_name == "WRook2  " || piece_name == "WPawn1  " ||
+        piece_name == "WPawn1  " || piece_name == "WPawn2  " || piece_name == "WPawn3  " ||
+        piece_name == "WPawn4  " || piece_name == "WPawn5  " || piece_name == "WPawn6  " ||
+        piece_name == "WPawn7  " || piece_name == "WPawn8  " || piece_name == "BKing  " ||
+        piece_name == "BQueen  " || piece_name == "BBishop1" || piece_name == "BBishop2" ||
+        piece_name == "BKnight1" || piece_name == "BKnight2" || piece_name == "BRook1  " ||
+        piece_name == "BRook2  " || piece_name == "BPawn1  " || piece_name == "BPawn1  " ||
+        piece_name == "BPawn2  " || piece_name == "BPawn3  " || piece_name == "BPawn4  " ||
+        piece_name == "BPawn5  " || piece_name == "BPawn6  " || piece_name == "BPawn7  " ||
+        piece_name == "BPawn8  "))
+        this->piece_name = piece_name;
+    else
+        return;
 }
-    //Mutators
+
 void Piece::setColor(char color)
 {
     color = toupper(color);
